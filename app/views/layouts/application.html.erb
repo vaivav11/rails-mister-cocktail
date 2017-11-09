@@ -5,10 +5,19 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700|Varela+Round:400" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
   </head>
 
   <body>
     <%= yield %>
+
+    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
+    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/application.js -->
   </body>
+
+
 </html>
