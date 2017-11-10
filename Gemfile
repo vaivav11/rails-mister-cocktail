@@ -64,3 +64,5 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 
 ruby '2.3.5'
+
+gem 'figaro'
